@@ -38,15 +38,15 @@ namespace IdentityAPI
                 c.AddDefaultPolicy(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             });
 
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new Info
-                {
-                    Title = "Identity API",
-                    Version = "1.0",
-                    Description = "Authentication methods for Eshop application"
-                });
-            });
+            //services.AddSwaggerGen(c =>
+            //{
+            //    c.SwaggerDoc("v1", new Info
+            //    {
+            //        Title = "Identity API",
+            //        Version = "1.0",
+            //        Description = "Authentication methods for Eshop application"
+            //    });
+            //});
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
