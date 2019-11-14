@@ -27,6 +27,7 @@ namespace IdentityAPI.Models
 
         [Required(ErrorMessage = "Email cannot be empty")]
         [DataType(DataType.EmailAddress)]
+        [EmailAddress]
         public string Email { get; set; }
 
 
